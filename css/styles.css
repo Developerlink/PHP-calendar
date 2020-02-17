@@ -1,0 +1,315 @@
+
+.container {
+  margin-top: 20px;
+}
+
+/* To make sure that bootstrap does not create unwanted white space to the right*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+/* changes the theme of the body to dark. This is the default */
+.body-dark {
+  background-color: black;
+  color: gray;
+}
+
+h1, h2, h3 {
+  margin: 2rem auto;
+}
+
+
+hr.black {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 0px;
+}
+
+hr.gray {
+  background-color: gray;
+  margin: 2rem auto;
+}
+
+a {
+  color: inherit;
+}
+
+a.blue {
+  color: #1089ff;
+  font-weight: bold;
+}
+
+div.middle {
+  width: 15%;
+  text-align: center;
+}
+
+h3.right {
+  margin-left: 0;
+}
+
+div.row-headline {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3.left {
+  margin-right: 0;
+}
+
+h3.headline {
+  margin-top: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+.head-display {
+  text-align: center;
+  width: 50%;
+}
+
+/* GRID layout */
+.layout {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+  "top-navigation top-navigation top-navigation top-navigation top-navigation top-navigation top-navigation"
+  "side-navigation content content content content content content";
+  /* To make sure that bootstrap does not create unwanted white space to the right even though I already did this to the body */
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+    "top-navigation"
+    "side-navigation"
+    "content";
+    /* To make sure that bootstrap does not create unwanted white space to the right even though I already did this to the body */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+}
+
+/* Defining the grid areas */
+.top-navigation {
+  grid-area: top-navigation;
+}
+
+.content {
+  grid-area: content;
+}
+
+.side-navigation {
+  grid-area: side-navigation;
+}
+
+
+/* everything related to the sidebar */
+.sidebar-navigation {
+  padding-right: 0px;
+}
+
+.body-column {
+  padding: 50px;
+  width: auto;
+  height: 100%;
+}
+
+.body-column-center {
+  padding: 0px 10rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.body-column-center-year {
+  padding: 0px 5rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.form {
+  text-align: left;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.nav-item .side-link{
+  color: #eae9e9;
+}
+
+.sidebar-content .nav-item:hover {
+  background-color: black;
+}
+
+th {
+  height: 10px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #95adbe;
+}
+td {
+  height: 10px;
+}
+
+td.month {
+  height: 70px;
+}
+
+td.td-year {
+  padding: 0px;
+  height: 1vh;
+}
+
+
+.td-hover:hover {
+  background-color: #95adbe;
+}
+
+td.td-week {
+  font-weight: bold;
+}
+
+td.td-day {
+  text-align: right;
+}
+
+div.td-day {
+  margin: 0;
+}
+
+div.td-right {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+div.td-left {
+  font-size: 0.7em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+}
+
+table.month {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* how it looked before
+ table.month {
+  table-layout: fixed;
+  width: 90%;
+  margin: auto;
+} */
+
+th.time-day {
+  width: 100px;
+}
+
+td.today, th.today {
+  background-color: #dff0ea;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+th.purple:nth-of-type(1), td.purple:nth-of-type(1) {
+  color: #8559a5;
+  text-align: center;
+  font-weight: 700;
+}
+
+th.blue, td.blue {
+  color: #1089ff;
+  font-weight: bold;
+}
+
+th.red, td.red {
+  color: #d04925;
+  font-weight: bold;
+}
+
+td.week-gray {
+  background-color: #eaeaea;
+}
+
+td.week-cyan {
+  background-color: #9fd3c7;
+}
+
+div.day-in-year {
+  display: inline;
+}
+
+
+hr.black {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 0px;
+}
+
+td.left {
+  text-align: left;
+}
+
+span.td-span {
+  margin-right: 5rem;
+}
+
+td.no-border {
+  border: 0;
+}
+
+.test-right {
+  float: right;
+}
+
+td.title {
+  font-weight: bold;
+  width: 8rem;
+}
+
+a.blue {
+  color: dodgerblue;
+}
+
+td.delete {
+  vertical-align: middle;
+}
+
+.day-table {
+  margin-bottom: 0;
+}
+
+.td-week {
+  border-bottom: solid 1px gray;
+}
+
+.no-padding {
+  padding: 0;
+}
+/* .table-day tr:nth-child(even){
+  background-color: #f2f2f2;
+} */
